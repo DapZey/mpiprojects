@@ -12,8 +12,8 @@ int main(int argc, char *argv[]) {
     double a, b, h, x, local_sum = 0, total_sum, integral;
     
     MPI_Init(&argc, &argv);
-    MPI_Comm_p(MPI_COMM_WORLD, &p);
-    MPI_Comm_id(MPI_COMM_WORLD, &id);
+    MPI_Comm_size(MPI_COMM_WORLD, &p);
+    MPI_Comm_rank(MPI_COMM_WORLD, &id);
     n = 1000000000;
     a = 0;
     b = 12;
