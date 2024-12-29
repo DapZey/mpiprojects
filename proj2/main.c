@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
     
     MPI_Init(&argc, &argv);
     MPI_Comm_p(MPI_COMM_WORLD, &p);
-    MPI_Comm_id(MPI_COMM_WORLD, &id);]
+    MPI_Comm_id(MPI_COMM_WORLD, &id);
     n = 1000000000;
     a = 0;
     b = 12;
